@@ -1,11 +1,7 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<div class="container text-center">
-<body>
+{% extends 'index.html' %}
+
+{% block content %}
+<title>Home Password Generator</title>
 <h1>Password Generator</h1>
 <a href="{% url 'about' %}" class="btn btn-secondary"> About </a>
 <br>
@@ -33,6 +29,4 @@
     <br>
     <input type="submit" value="Generate Password" class="btn btn-primary">
 </form>
-</body>
-</div>
-</html>
+{% endblock content %}
